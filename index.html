@@ -11,15 +11,36 @@
 
 	<h1>Změna tříd, události</h1>
 
-	<div class="ctverecek zluty"></div>
+	<p class="prvniUkol">Domácí úkol 1: Tlačítko “červené po kliknutí” bude odstavci
+		přidávat/odebírat třídu, která bude barvu písma v odstavci měnit na
+		červenou.</p>
+	<button onclick="cervenyPoKliknuti()">cervene po kliknuti</button>
 
-	<div class="ctverecek zeleny"></div>
+	<p class="druhyUkol" id="druhyUkol">Domácí úkol 2: přidej tlačítko “větší po kliknutí”, které písmo zvětší o
+		jeden pixel oproti jeho aktuální velikost.</p>
 
-	<img class="obrazek" src="obrazky/kocka.jpg">
+	<button onclick="vetsiPoKliknuti()">vetsi po kliknuti</button>
 
-	<button class="tlacitko">Čudlajs</button>
+	<button class="druhyUkolMinus">mensi po kliknuti</button>
 
-	<audio src="audio/dingdingdang.mp3" preload="auto"></audio>
+	<button class="removeProperty" onclick="odstraneniStylu()">odstraneni stylu</button>
 
+	<p>Domácí úkol 3: Dopracuj ovládání audio souboru
+		<ul>
+		<li>	pauznutí zvukové stopy</li>
+		<li>	nastavení zvuku na 0, 0.5 a 1</li>
+		<li>	vrácení se na začátek</li>
+	</ul></p>
+
+	<button class="tlacitko" onclick="Start()">Start</button>
+	<button class="tlacitko" onclick="Stop()">Stop</button>
+	<button class="tlacitko" onclick="Restart()">Restart</button>
+	<button class="tlacitko" onclick="Volume0()">Volume 0</button>
+	<button class="tlacitko" onclick="Volume05()">Volume 0.5</button>
+	<button class="tlacitko" onclick="Volume1()">Volume 1</button>
+
+	<audio src="audio/dingdingdang.mp3" id="zvuk" preload="auto"></audio>
+
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
