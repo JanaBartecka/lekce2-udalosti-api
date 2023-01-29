@@ -3,7 +3,6 @@
 function cervenyPoKliknuti() {
     let prvniOdstavec=document.querySelector('.prvniUkol');
     prvniOdstavec.classList.toggle('cervena-trida');
-    console.log(prvniOdstavec);
 }
 
 
@@ -22,9 +21,6 @@ mensiPismo.onclick = function() {
   druhyOdstavecMInus.style.fontSize =  parseInt(fontSizeMinus) - 1 + 'px';
 }
 
-// var odstraneniStylu=document.querySelector('removeProperty')
-
-// odstraneniStylu.onclick = function() {
 function odstraneniStylu() {
   var myDocument=document.styleSheets;
   for (var i in myDocument) {
